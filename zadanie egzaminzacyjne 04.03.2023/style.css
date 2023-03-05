@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(rgb(223, 32, 32) 0%, rgb(34, 219, 59) 100%);
+}
+body > div{
+    width: 70vw;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+body > div> main, aside{
+    background-color: beige;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 20px;
+
+}
+body> div> header{ 
+    font-size: 5rem;
+    letter-spacing: 2vw;
+    text-align: center;
+    font-weight: bold;
+    order: 1;
+    height: 100px;
+    flex: 0 1 100vw;
+}
+
+body > div > main{
+    order: 3;
+    min-height: 400px; 
+    flex: 1;
+    flex: 55%;
+    text-align: justify;
+}
+body >div> aside{
+    order: 4;
+    flex: 15%;
+}
